@@ -1,1 +1,252 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.whole{
+  text-align:center;
+  font-family:Sans-serif;
+  background:gray;
+  color:white;
+  text-shadow:2px 2px black;
+  padding:2px;
+  margin-left:2px;
+  margin-right:2px;
+  margin-top:2px;
+}
+
+h3{
+  font-weight:bold;
+  font-size:22px;
+  border: solid black 1px;
+  margin-top:10px;
+  margin-bottom:40px;
+  margin-right:5px;
+  margin-left:5px;
+  padding:10px;
+  background:black;
+}
+
+h1{
+  font-size:60px;
+  font-style:italic;
+  font-weight:bold;
+  margin-bottom:40px;
+}
+
+.item{
+  border:solid black 1px;
+  border-radius:20px;
+  padding:10px;
+  font-size:20px;
+  margin-bottom:40px;
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+}
+
+.item{
+  background:black;
+}
+
+h2{
+  font-size:60px;
+  font-style:italic;
+  font-weight:bold;
+  margin-bottom:40px;
+}
+
+.site{
+  padding:60px;
+}
+
+p1{
+  font-size:22px;
+}
+
+.foot{
+  font-weight:bold;
+  font-size:22px;
+  border: solid black 1px;
+  margin-top:10px;
+  margin-bottom:40px;
+  margin-right:5px;
+  margin-left:5px;
+  padding:40px;
+  background:black;
+}
+
+.end{
+  color:white;
+  text-decoration:none;
+  border:solid 1px white;
+  padding:10px;
+}
+
+.projects{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.projects .work{
+  height:800px;
+  width:300px;
+  border:1px solid white;
+  padding:5px;
+  margin:10px;
+  object-fit:cover;
+}
+
+.mainimage{
+  height:800px;
+  width:1880px;
+}
+
+p2{
+  text-align:center;
+  font-size:22px;
+  margin:300px 40px;  
+}
+
+/*Accesibility Features & Responsive-Design Code*/
+
+@media (max-width:800px){
+nav{
+    display:flex;
+    flex-direction:row;
+    padding: 10px 150px 10px 150px;
+    justify-content:center;
+  }
+  nav .item{
+    font-size:200%;    
+  }
+  h1{
+    font-size:400%;
+  }
+  h2{
+    font-size:400%;
+  }
+  p1{
+    font-size:200%;
+  }
+  .mainimage{
+    width:95%;
+    height:62.5%
+  }
+  .projects{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:
+  }
+  .projects .work{
+    width:43%;
+  }
+  p2{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:200%;
+  }
+  .foot{
+    font-size:200%;
+    padding: 20px 150px 20px 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+}
+
+@media (max-width: 500px){
+  nav{
+    display:flex;
+    flex-direction:column;
+    padding: 10px 150px 10px 150px;
+    justify-content:center;  
+  }
+  nav .item{
+    font-size:140%;    
+  }
+  h1{
+    font-size:300%;
+  }
+  h2{
+    font-size:300%;
+  }
+  p1{
+    font-size:140%;
+  }
+  .mainimage{
+    width:95%;
+    height:62.5%
+  }
+  .projects{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:
+  }
+  .projects .work{
+    width:43%;
+  }
+  p2{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .foot{
+    font-size:140%;
+    padding: 20px 150px 20px 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+}
+html{
+  font-size:62.5%
+}
