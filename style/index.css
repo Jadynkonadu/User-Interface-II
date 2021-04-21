@@ -154,12 +154,99 @@ p2{
   margin:300px 40px;  
 }
 
-/*Responsive Design Code*/
+/*Accesibility Features & Responsive-Design Code*/
 
-@media (800px){
-
+@media (max-width:800px){
+nav{
+    display:flex;
+    flex-direction:row;
+    padding: 10px 150px 10px 150px;
+    justify-content:center;
+  }
+  nav .item{
+    font-size:200%;    
+  }
+  h1{
+    font-size:400%;
+  }
+  h2{
+    font-size:400%;
+  }
+  p1{
+    font-size:200%;
+  }
+  .mainimage{
+    width:95%;
+    height:62.5%
+  }
+  .projects{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:
+  }
+  .projects .work{
+    width:43%;
+  }
+  p2{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:200%;
+  }
+  .foot{
+    font-size:200%;
+    padding: 20px 150px 20px 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 }
 
-@media (500px){
-  
+@media (max-width: 500px){
+  nav{
+    display:flex;
+    flex-direction:column;
+    padding: 10px 150px 10px 150px;
+    justify-content:center;  
+  }
+  nav .item{
+    font-size:140%;    
+  }
+  h1{
+    font-size:300%;
+  }
+  h2{
+    font-size:300%;
+  }
+  p1{
+    font-size:140%;
+  }
+  .mainimage{
+    width:95%;
+    height:62.5%
+  }
+  .projects{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:
+  }
+  .projects .work{
+    width:43%;
+  }
+  p2{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .foot{
+    font-size:140%;
+    padding: 20px 150px 20px 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+}
+html{
+  font-size:62.5%
 }
